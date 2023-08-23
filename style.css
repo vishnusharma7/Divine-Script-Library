@@ -1,0 +1,149 @@
+@import "normalize.css";
+
+@font-face {
+    font-family: 'Inter';
+    src: url(Inter.ttf);
+    font-display: swap;
+}
+
+
+:root {
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --primary-color: #7921de;
+    --primary-text-color: #ffffff;
+    --text-color: #2d2d2d;
+    --sub-text-color: #4c4a58;
+    --bg-color: #ffffff;
+    --sidebar: #ffff;
+    --message: rgb(255, 255, 255);
+    --nav: #fff;
+    --border-color: rgb(206, 206, 206);
+    --box-shadow: 0 0 6px rgb(0, 0, 0, 0.5);
+    --message-text-bg: rgba(158, 154, 159, 0.1);
+
+
+}
+
+
+.dark {
+    --bg-color: #232627;
+    --text-color: #ffffff;
+    --sub-text-color: #cfcfcf;
+    --sidebar: rgb(21, 24, 25);
+    --nav: #141718;
+    --message: #232627;
+    --border-color: rgb(77, 75, 75);
+    --box-shadow: 0 0 6px rgb(255, 255, 255, 0.1);
+    --message-text-bg: rgba(160, 159, 161, 0.1);
+    transition: 0.3s;
+
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background-color: #85818a;
+    border-radius: 5px;
+}
+
+
+::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+h2 {
+    color: var(--sub-text-color);
+    font-weight: 500;
+}
+
+.input::placeholder {
+    padding: 0.5em;
+    color: #999999;
+    /* Placeholder text color */
+    font-size: 0.9em;
+    /* Placeholder text style */
+}
+
+img {
+    max-width: 100%;
+    width: auto;
+    max-height: 100%;
+    height: auto;
+}
+
+.container {
+    margin: auto;
+    padding: 1.5em;
+    width: 100%;
+    width: calc(100% - 3em);
+
+}
+a{
+    text-decoration: none;
+
+}
+.nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1em;
+}
+.search input{
+    border: none;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+.search input:focus{
+    outline: none;
+}
+.search{
+    padding: 0.4em;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    border: 0.1px solid var(--border-color);
+    border-radius: 2em;
+}
+.nav a{
+    color: var(--text-color);
+    font-weight: 500;
+}
+.heading{
+    width: 100%;
+    
+    padding: 5em 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.heading span{
+    padding: 0.5em;
+    font-size: 4em;
+    font-weight: 600;
+    background: linear-gradient(45deg, #d41908, #ffff00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.heading a{
+    background-color:#141718;
+    color: #f0f0f0;
+    padding: 0.5em 1em;
+    font-size: 1.5em;
+    border-radius: 0.5em;
+}
